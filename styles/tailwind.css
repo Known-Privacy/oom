@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "acuminpro-regular";
+  src: url("../fonts/acuminpro_regular_macroman/acuminpro-regular-webfont.woff2")
+      format("woff2"),
+    url("../fonts/acuminpro_regular_macroman/acuminpro-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "acuminprowide-regular";
+  src: url("../fonts/acuminprowide_regular_macroman/acuminprowide-regular-webfont.woff2")
+      format("woff2"),
+    url("../fonts/acuminprowide_regular_macroman/acuminprowide-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "acuminprowide-semibold";
+  src: url("../fonts/acuminprowide-semibold-webfont.woff2") format("woff2"),
+    url("../fonts/acuminprowide-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .change {
+    color: transparent;
+  }
+}

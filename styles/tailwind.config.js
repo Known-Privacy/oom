@@ -64,7 +64,8 @@ module.exports = {
       },
       backgroundImage: {
         'ellipse-23': "url('../images/ellipse-23.png')",
-      },
+        'ellipse-24': "url('../images/ellipse-24.png')",
+      }
     },
   },
   plugins: [],

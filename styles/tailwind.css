@@ -41,6 +41,10 @@
     border: 2px dashed #000000;
   }
   
+  .blog-post-hero {
+    background-image: linear-gradient(rgba(1, 0, 1, 0.6), rgba(1, 0, 1, 0.6)), url('../images/blog-post-hero.jpg');
+  }
+  
   .liquid-12 {
     background-image: url('../images/liquid-12.png');
     background-repeat: no-repeat;
@@ -53,6 +57,17 @@
   }
 
   .ellipse-23 .clip-center {
+    padding: 280px;
+    margin: 167px 172px;
+  }
+  
+  .ellipse-24 {
+    margin: 60px 0 60px 52px;
+    background-image: url('../images/ellipse-24.png');
+    background-repeat: no-repeat;
+  }
+
+  .ellipse-24 .clip-center {
     padding: 280px;
     margin: 167px 172px;
   }

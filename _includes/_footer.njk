@@ -1,6 +1,34 @@
 <footer class="bg-white text-black text-sm">
-  <div class="container mx-auto items-center justify-center px-6 pt-6">
-    <div class="grid lg:grid-cols-2">
+  <div class="container mx-auto items-center justify-center px-6 py-12">
+    <div class="flex flex-row min-w-full">
+      <div class="basis-1/8 grow">
+        <img class="h-full" src="{{ '/images/known-privacy-symbol.svg' }}" />
+      </div>
+      <div class="basis-5/8 grow">
+        <div class="flex flex-row">
+          {% for item in navigation %}
+          <div class="border border-gray-200 p-2 m-4">
+            <a href="{{item.url}}" target="_blank" class="text-lg font-semibold">{{ item.label }}</a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="basis-2/8 grow">
+        <ul class="list-none mb-0">
+          <li class="my-5">
+            <a href="https://www.knownprivacy.com/terms-of-service" target="_blank" class="">Terms of Service</a>
+          </li>
+          <li class="my-5">
+            <a href="https://www.knownprivacy.com/known-privacy-policy" target="_blank" class="">Privacy Policy</a>
+          </li>
+        </ul>
+        <p class="text-sm font-semibold mt-8">© 2022 Known Privacy PBC</p>
+      </div>
+    </div>
+    
+    
+    
+    {# <div class="grid lg:grid-cols-2">
       <div class="mb-6">
         <p>
           2101 Pearl St.<br>
@@ -24,6 +52,6 @@
           &copy; 2022 Known Privacy, PBC
         </p>
       </div>
-    </div>
+    </div> #}
   </div>
 </footer>

@@ -1,8 +1,8 @@
 @font-face {
   font-family: "acuminpro-regular";
-  src: url("../fonts/acuminpro-regular-webfont.woff2")
+  src: url("./fonts/acuminpro-regular-webfont.woff2")
       format("woff2"),
-    url("../fonts/acuminpro-regular-webfont.woff")
+    url("./fonts/acuminpro-regular-webfont.woff")
       format("woff");
   font-weight: normal;
   font-style: normal;
@@ -11,9 +11,9 @@
 
 @font-face {
   font-family: "acuminprowide-regular";
-  src: url("../fonts/acuminprowide-regular-webfont.woff2")
+  src: url("./fonts/acuminprowide-regular-webfont.woff2")
       format("woff2"),
-    url("../fonts/acuminprowide-regular-webfont.woff")
+    url("./fonts/acuminprowide-regular-webfont.woff")
       format("woff");
   font-weight: normal;
   font-style: normal;
@@ -22,8 +22,8 @@
 
 @font-face {
   font-family: "acuminprowide-semibold";
-  src: url("../fonts/acuminprowide-semibold-webfont.woff2") format("woff2"),
-    url("../fonts/acuminprowide-semibold-webfont.woff") format("woff");
+  src: url("./fonts/acuminprowide-semibold-webfont.woff2") format("woff2"),
+    url("./fonts/acuminprowide-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -42,17 +42,17 @@
   }
   
   .blog-post-hero {
-    background-image: linear-gradient(rgba(1, 0, 1, 0.6), rgba(1, 0, 1, 0.6)), url('../images/blog-post-hero.jpg');
+    background-image: linear-gradient(rgba(1, 0, 1, 0.6), rgba(1, 0, 1, 0.6)), url('./images/blog-post-hero.jpg');
   }
   
   .liquid-12 {
-    background-image: url('../images/liquid-12.png');
+    background-image: url('./images/liquid-12.png');
     background-repeat: no-repeat;
   }
   
   .ellipse-23 {
     margin: 60px 0 60px 52px;
-    background-image: url('../images/ellipse-23.png');
+    background-image: url('./images/ellipse-23.png');
     background-repeat: no-repeat;
   }
 
@@ -63,7 +63,7 @@
   
   .ellipse-24 {
     margin: 60px 0 60px 52px;
-    background-image: url('../images/ellipse-24.png');
+    background-image: url('./images/ellipse-24.png');
     background-repeat: no-repeat;
   }
 

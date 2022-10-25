@@ -45,6 +45,10 @@
     background-image: linear-gradient(rgba(1, 0, 1, 0.6), rgba(1, 0, 1, 0.6)), url('./images/blog-post-hero.jpg');
   }
   
+  .liquid-13-hero {
+    background-image: url('./images/liquid-13-hero.png');
+  }
+  
   .liquid-12 {
     background-image: url('./images/liquid-12.png');
     background-repeat: no-repeat;

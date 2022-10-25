@@ -42,21 +42,21 @@
   }
   
   .blog-post-hero {
-    background-image: linear-gradient(rgba(1, 0, 1, 0.6), rgba(1, 0, 1, 0.6)), url('./images/blog-post-hero.jpg');
+    background-image: linear-gradient(rgba(1, 0, 1, 0.6), rgba(1, 0, 1, 0.6)), url('./images/blog-post-hero-min.jpg');
   }
   
   .liquid-13-hero {
-    background-image: url('./images/liquid-13-hero.png');
+    background-image: url('./images/liquid-13-hero-min.png');
   }
   
   .liquid-12 {
-    background-image: url('./images/liquid-12.png');
+    background-image: url('./images/liquid-12-min.png');
     background-repeat: no-repeat;
   }
   
   .ellipse-23 {
     margin: 60px 0 60px 52px;
-    background-image: url('./images/ellipse-23.png');
+    background-image: url('./images/ellipse-23-min.png');
     background-repeat: no-repeat;
   }
 

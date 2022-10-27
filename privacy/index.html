@@ -45,6 +45,37 @@
                 
                 <a href="https://app.knownprivacy.com/users/register" class="py-5 px-6 m-3 text-white text-lg border-2 border-white rounded-full duration-700 ease-out hover:border-gray-500">Sign Up</a>
             </div>
+
+            <!-- hamburger rubble rubble -->
+            <div class="lg:hidden text-white flex md:flex-row md:space-x-12 h-full">
+                <a href="https://app.knownprivacy.com/users/register" class="p-3 mx-3 my-5 text-white border-2 border-white rounded-full duration-700 ease-out hover:border-gray-500">Sign Up</a>
+                
+                <div class="mobile-menu-button space-y-2 my-8 mx-3 sm:mx-1">
+                    <div class="w-10 h-1 bg-white rounded"></div>
+                    <div class="w-10 h-1 bg-white rounded"></div>
+                    <div class="w-10 h-1 bg-white rounded"></div>
+                </div>
+            
+                <div class="absolute top-20 right-2 md:right-0 hidden mobile-menu bg-black p-6 w-80">
+                    
+                    <a href="/oom/about" class="block text-white text-lg duration-700 ease-out pt-7">About Us</a>
+                    
+                    <a href="/oom/education" class="block text-white text-lg duration-700 ease-out pt-7">Education</a>
+                    
+                    <a href="/oom/pricing" class="block text-white text-lg duration-700 ease-out pt-7">Pricing</a>
+                    
+                    <a href="https://app.knownprivacy.com/users/log_in" class="block text-white text-lg duration-700 ease-out pt-7">Sign In</a>
+                    
+                </div>
+                <script>
+                (function() {
+                    const btn = document.querySelector(".mobile-menu-button");
+                    const menu = document.querySelector(".mobile-menu");
+                    btn.addEventListener("click", () => menu.classList.toggle("hidden"));    
+                })();
+                </script>
+            </div>
+
         </div>
     </div>
 </div>
@@ -67,7 +98,8 @@
 
       <footer class="bg-white text-black text-sm">
   <div class="container mx-auto items-center justify-center px-6 py-12">
-    <div class="flex flex-row min-w-full">
+    
+    <div class="hidden lg:flex flex-row min-w-full">
       <div class="basis-1/8 grow">
         <img class="h-full" src="/oom/assets/images/known-privacy-symbol.svg" />
       </div>
@@ -103,6 +135,18 @@
         </ul>
         <p class="text-sm font-semibold mt-8">© 2022 Known Privacy PBC</p>
       </div>
+    </div>
+
+    <div class="flex lg:hidden flex-col min-w-full">
+  <ul class="list-none mb-0">
+          <li class="my-5">
+            <a href="/oom/terms">Terms of Service</a>
+          </li>
+          <li class="my-5">
+            <a href="/oom/privacy">Privacy Policy</a>
+          </li>
+        </ul>
+        <p class="text-sm font-semibold mt-8">© 2022 Known Privacy PBC</p>
     </div>
   </div>
 </footer>

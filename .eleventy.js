@@ -42,9 +42,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./assets/styles/tailwind.config.js');
   eleventyConfig.addWatchTarget('./assets/styles/tailwind.css');
   eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './assets/styles/style.css' });
-  eleventyConfig.addShortcode('version', function () {
-    return now;
-  })
+  eleventyConfig.addShortcode('version', () => now);
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
@@ -56,6 +55,10 @@ module.exports = function (eleventyConfig) {
   
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+  });
+  
+  eleventyConfig.addFilter("published", (articles) => {
+    return articles.filter(article => article && article.data.draft === false)
   });
   
   return {

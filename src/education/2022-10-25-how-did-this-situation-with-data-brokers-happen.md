@@ -1,12 +1,19 @@
 ---
 layout: education.njk
 title: How did this situation with data brokers happen?
-description: "The answer is simple: technological capability + legal ambiguity + predatory, self-serving behavior."
+description: "The answer is simple: technological capability + legal ambiguity + predatory,
+  self-serving behavior."
 date: 2022-10-25T18:12:46.700Z
-draft: true
+draft: false
 tags: education
 author: Brendan Roberts
 slug: situation-data-brokers-happen
+preview: null
+keywords:
+  - data brokers
+  - predatory
+  - profiles about people
+  - surveil people
 ---
 The Internet we all know and used to love was paid for with advertising. So much of the experience we get on the web is free as in no credit card required. We can read blog articles, research vacations, search wikipedia, and much more. There just might be ads down the side of the page. Most of us are ok with that.
 

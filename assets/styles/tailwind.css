@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "acuminpro-regular";
+  src: url("./assets/fonts/acuminpro-regular-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/acuminpro-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "acuminprowide-regular";
+  src: url("./assets/fonts/acuminprowide-regular-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/acuminprowide-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "acuminprowide-semibold";
+  src: url("./assets/fonts/acuminprowide-semibold-webfont.woff2") format("woff2"),
+    url("./assets/fonts/acuminprowide-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .dashed-circle-border{
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    border: 2px dashed #000000;
+  }
+  
+  .blog-post-hero {
+    background-image: linear-gradient(rgba(1, 0, 1, 0.6), rgba(1, 0, 1, 0.6)), url('./assets/images/blog-post-hero-min.jpg');
+  }
+  
+  .liquid-13-hero {
+    background-image: url('./assets/images/liquid-13-hero-min.png');
+  }
+  
+  .liquid-12 {
+    background-image: url('./assets/images/liquid-12-min.png');
+    background-repeat: no-repeat;
+  }
+  
+  .ellipse-23 {
+    margin: 60px 0 60px 52px;
+    background-image: url('./assets/images/ellipse-23-min.png');
+    background-repeat: no-repeat;
+  }
+
+  .ellipse-23 .clip-center {
+    padding: 280px;
+    margin: 167px 172px;
+  }
+  
+  .ellipse-24 {
+    margin: 60px 0 60px 52px;
+    background-image: url('./assets/images/ellipse-24.png');
+    background-repeat: no-repeat;
+  }
+
+  .ellipse-24 .clip-center {
+    padding: 280px;
+    margin: 167px 172px;
+  }
+
+  .exclude {
+    margin: 60px 0 60px 52px;
+    background-image: url('./assets/images/exclude.svg');
+    background-repeat: no-repeat;
+  }
+}

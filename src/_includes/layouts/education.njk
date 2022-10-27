@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8"/>
+    {% if description %}
+      <meta name="description" content="{{description}}"/>
+    {% endif %}
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/manifest/favicon.ico' | url }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{'/assets/manifest/apple-touch-icon.png' | url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/manifest/favicon-32x32.png' | url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/manifest/favicon-16x16.png' | url }}">
+    <link rel="mask-icon" href="{{ '/assets/manifest/safari-pinned-tab.svg' | url }}" color="#59827d">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#e5e5e5">
+    
+    <link rel="stylesheet" href="{{ '/style.css' | url }}"/>
+    {% block head %}{% endblock %}
+    <style>
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-family: acuminprowide-semibold, sans-serif;
+        font-size: 1.875rem;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+
+      h3 {
+        font-family: acuminprowide-semibold, sans-serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      p {
+        font-family: acuminprowide-regular;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 1.125rem;
+        line-height: 2.25rem;
+      }
+    </style>
+  </head>
+  <body class="bg-neutral education-page">
+    <div class="container-none">
+      {% include "_header.njk" %}
+
+      <div class="container mx-auto mb-4">
+        <article class="pt-20 mb-auto bg-white">
+        {% block content %}
+          <div class="flex justify-center">
+            <div class="max-w-prose">
+              <header>
+                <h1 class="font-semibold leading-none capitalize">{{ title }}</h1>
+                <h3 class="leading-relaxed mt-2">by {{ author }}</h3>
+                <p class="text-sm text-gray-400 mt-4 mb-12">{{ date | postDate }}</p>
+                <h5 class="text-lg text-gray-400">{{ description }}</h5>
+              </header>
+              {{ content | safe }}
+            </div>
+          </div>
+        {% endblock %}
+        <h3 class="text-center pb-12">. . .</h3>
+        </article>
+      </div>
+
+      {% include "_footer.njk" %}
+    </div>
+  </body>
+</html>

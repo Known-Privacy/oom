@@ -1,6 +1,7 @@
 const htmlmin = require('html-minifier')
 const now = String(Date.now())
 const Image = require("@11ty/eleventy-img");
+const { DateTime } = require("luxon");
 
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
@@ -20,39 +21,52 @@ async function imageShortcode(src, alt, sizes) {
   return Image.generateHTML(metadata, imageAttributes);
 }
 
+function htmlMinifier(content, outputPath) {
+  if (
+    process.env.ELEVENTY_PRODUCTION &&
+    outputPath &&
+    outputPath.endsWith('.html')
+  ) {
+    let minified = htmlmin.minify(content, {
+      useShortDoctype: true,
+      removeComments: true,
+      collapseWhitespace: true,
+    })
+    return minified;
+  }
+
+  return content;
+}
+
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget('./styles/tailwind.config.js')
-  eleventyConfig.addWatchTarget('./styles/tailwind.css')
-  eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './style.css' });
+  eleventyConfig.addWatchTarget('./assets/styles/tailwind.config.js');
+  eleventyConfig.addWatchTarget('./assets/styles/tailwind.css');
+  eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './assets/styles/style.css' });
   eleventyConfig.addShortcode('version', function () {
-    return now
+    return now;
   })
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
-  eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
-    if (
-      process.env.ELEVENTY_PRODUCTION &&
-      outputPath &&
-      outputPath.endsWith('.html')
-    ) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-      })
-      return minified
-    }
+  eleventyConfig.addTransform('htmlmin', htmlMinifier);
 
-    return content
+  eleventyConfig.addPassthroughCopy("assets");
+  
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
-
-  // Copy `fonts/` to `_site/fonts`
-  // Keeps the same directory structure.
-  eleventyConfig.addPassthroughCopy("fonts");
-  eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("js");
-  eleventyConfig.addPassthroughCopy("manifest");
+  
+  return {
+    passthroughFileCopy: true,
+    markdownTemplateEngine: "njk",
+    templateFormats: ["njk", "md"],
+    dir: {
+      input: "src",
+      output: "_site",
+      includes: "_includes",
+      layouts:  '_includes/layouts',
+    }
+  };
 };

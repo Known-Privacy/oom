@@ -1,0 +1,74 @@
+{% extends "./_includes/layouts/default.njk" %}
+
+{% block title %}Opt-Out Machine by Known Privacy{% endblock %}
+
+{% block content %}
+  <div class="bg-neutral flex flex-row">
+    <div class="basis-2/3 p-36">
+      <h2 class="font-semibold text-4xl mb-16">Opt Out Machine</h2>
+      <h1 class="font-semibold text-6xl leading-none capitalize mt-0 mb-2">Stop companies from selling your data.</h1>
+      <p class="mt-8 text-lg">The Opt-Out Machine is a tool you can use to demand that companies stop this intrusive behavior.</p>
+      <p class="mt-8">
+        <a 
+          class="uppercase text-lg py-3 px-8 bg-black font-bold text-white rounded-3xl border border-black duration-700 ease-out hover:bg-white hover:text-black hover:border-gray-300" 
+          href="https://app.knownprivacy.com/users/register"
+        >
+          Get Started
+        </a>
+      </p>
+    </div>
+    <div class="ellipse-23 basis-1/3 p-12 overflow-hidden">
+      <div class="clip-center bg-neutral rounded-full"></div>
+    </div>
+  </div>
+  
+  <div class="bg-neutral flex flex-row m-36 -mt-32 lg:-mt-96">
+    <div class="basis-1/3">
+      <img src="{{ '/assets/images/data-pool.svg' | url }}" alt="">
+    </div>
+    <div class="basis-1/3">
+      <p class="leading-loose text-lg">For over a decade, people have been powerless. But new legislation is changing that. You can now tell companies that they need to:
+        <ol class="list-decimal ml-4 leading-loose">
+          <li class="pl-2 mt-3 text-lg">stop treating your personal information as a commodity they can use without your consent</li>
+          <li class="pl-2 mt-3 text-lg">tell you what information they have about you</li>
+        </ol>
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-neutral flex flex-row m-36">
+    <h3 class="font-semibold text-4xl mb-16">That means:</h3>
+  </div>
+
+  <div class="bg-neutral flex flex-row m-8 -mt-52">
+    <div class="bg-white p-18 m-12 p-16 drop-shadow-lg">  
+      <h2 class="font-semibold text-3xl mb-16">The Opt-Out Machine enables you to send privacy requests to hundreds of companies at once.</h2>
+      
+      <div class="flex justify-between">
+        <div class="basis-1/3">
+          <div class="dashed-circle-border">
+            <img class="m-12" src="{{ '/assets/images/data-pool.svg' | url }}" alt="your data rounded up">
+          </div>
+        </div>
+        <div class="basis-2/3">
+          <img class="float-right drop-shadow-lg" src="{{ '/assets/images/start-opt-out-machine.gif' | url }}" alt="start the Opt-Out Machine">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-black grid -mt-52 mb-16 py-52 liquid-12 place-content-center">
+    <div class="">
+      <h2 class="text-white font-semibold text-3xl">Sign up to opt out</h2>
+    </div>
+    <div class="mt-8 text-center">
+          <a 
+            class="uppercase text-center text-lg py-3 px-8 bg-white font-bold text-black rounded-3xl border border-black duration-700 ease-out hover:bg-black hover:text-white hover:border-gray-300" 
+            href="https://app.knownprivacy.com/users/register"
+          >
+            Get Started
+          </a>
+      
+    </div>
+  </div>
+{% endblock %}

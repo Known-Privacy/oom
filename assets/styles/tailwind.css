@@ -77,7 +77,7 @@
   }
 
   .exclude {
-    margin: 60px 0 60px 52px;
+    margin: 4px 0 60px 0;
     background-image: url('./assets/images/exclude.svg');
     background-repeat: no-repeat;
   }

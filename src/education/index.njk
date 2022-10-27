@@ -1,7 +1,7 @@
 {% extends "../_includes/layouts/default.njk" %}
 {% block title %}Opt-Out Machine by Known Privacy{% endblock %}
 {% block content %}
-<div class="bg-neutral flex flex-row">
+<div class="bg-neutral flex flex-row min-h-screen">
   <div class="basis-2/3 p-36">
     <h1 class="font-semibold text-6xl leading-none capitalize mt-0 mb-2">Education</h1>
     <div class="mt-6 grid grid-cols-1 gap-4">
@@ -14,6 +14,6 @@
         {%- endfor -%}
     </div>
     </div>
-    <div class="exclude basis-1/3 p-12 overflow-hidden"></div>
+    <div class="exclude rounded-lg bg-black basis-1/3 overflow-hidden"></div>
 </div>
 {% endblock %}

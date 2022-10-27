@@ -23,11 +23,11 @@
     {% block head %}{% endblock %}
   </head>
   <body class="bg-neutral">
-    <div class="flex flex-col min-h-screen justify-between">
+    <div class="flex flex-col min-h-screen">
       {% include "_header.njk" %}
 
       <div class="container mx-auto">
-        <main class="mb-auto">
+        <main>
         {% block content %}
           {{ content | safe }}
         {% endblock %}

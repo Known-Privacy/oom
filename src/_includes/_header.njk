@@ -15,6 +15,31 @@
                 
                 <a href="https://app.knownprivacy.com/users/register" class="py-5 px-6 m-3 text-white text-lg border-2 border-white rounded-full duration-700 ease-out hover:border-gray-500">Sign Up</a>
             </div>
+
+
+            <!-- hamburger rubble rubble -->
+            <div class="lg:hidden text-white flex md:flex-row md:space-x-12 h-full">
+                <a href="https://app.knownprivacy.com/users/register" class="p-3 mx-3 my-5 text-white border-2 border-white rounded-full duration-700 ease-out hover:border-gray-500">Sign Up</a>
+                
+                <div class="mobile-menu-button space-y-2 my-8 mx-3 sm:mx-1">
+                    <div class="w-10 h-1 bg-white rounded"></div>
+                    <div class="w-10 h-1 bg-white rounded"></div>
+                    <div class="w-10 h-1 bg-white rounded"></div>
+                </div>
+            
+                <div class="absolute top-20 right-2 md:right-0 hidden mobile-menu bg-black p-6 w-80">
+                    {% for item in navigation %}
+                    <a href="{{ item.url | url }}" class="block text-white text-lg duration-700 ease-out pt-7">{{ item.label }}</a>
+                    {% endfor %}
+                </div>
+                <script>
+                const btn = document.querySelector(".mobile-menu-button");
+                const menu = document.querySelector(".mobile-menu");
+                btn.addEventListener("click", () => menu.classList.toggle("hidden"));
+                </script>
+            </div>
+
+
         </div>
     </div>
 </div>

@@ -16,7 +16,6 @@
                 <a href="https://app.knownprivacy.com/users/register" class="py-5 px-6 m-3 text-white text-lg border-2 border-white rounded-full duration-700 ease-out hover:border-gray-500">Sign Up</a>
             </div>
 
-
             <!-- hamburger rubble rubble -->
             <div class="lg:hidden text-white flex md:flex-row md:space-x-12 h-full">
                 <a href="https://app.knownprivacy.com/users/register" class="p-3 mx-3 my-5 text-white border-2 border-white rounded-full duration-700 ease-out hover:border-gray-500">Sign Up</a>
@@ -33,12 +32,13 @@
                     {% endfor %}
                 </div>
                 <script>
-                const btn = document.querySelector(".mobile-menu-button");
-                const menu = document.querySelector(".mobile-menu");
-                btn.addEventListener("click", () => menu.classList.toggle("hidden"));
+                (function() {
+                    const btn = document.querySelector(".mobile-menu-button");
+                    const menu = document.querySelector(".mobile-menu");
+                    btn.addEventListener("click", () => menu.classList.toggle("hidden"));    
+                })();
                 </script>
             </div>
-
 
         </div>
     </div>

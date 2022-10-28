@@ -1,9 +1,9 @@
 {% extends "../_includes/layouts/default.njk" %}
 {% block title %}Opt-Out Machine by Known Privacy{% endblock %}
 {% block content %}
-<div class="bg-neutral flex flex-row min-h-screen">
-  <div class="basis-2/3 p-36">
-    <h1 class="font-semibold text-6xl leading-none capitalize mt-0 mb-2">Education</h1>
+<div class="bg-neutral flex flex-col lg:flex-row min-h-screen">
+  <div class="basis-2/3  p-6 md:p-24 lg:p-36">
+    <h1 class="font-semibold text-2xl md:text-4xl mb-16">Education</h1>
     <div class="mt-6 grid grid-cols-1 gap-4">
         {%- for article in collections.education | published | reverse -%}
         <a href="{{ article.url }}" class="p-4">

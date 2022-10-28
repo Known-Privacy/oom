@@ -26,7 +26,7 @@
                     <div class="w-10 h-1 bg-white rounded"></div>
                 </div>
             
-                <div class="absolute top-20 right-2 md:right-0 hidden mobile-menu bg-black p-6 w-80">
+                <div class="z-50 absolute top-20 right-2 md:right-0 hidden mobile-menu bg-black p-6 w-80">
                     {% for item in navigation %}
                     <a href="{{ item.url | url }}" class="block text-white text-lg duration-700 ease-out pt-7">{{ item.label }}</a>
                     {% endfor %}

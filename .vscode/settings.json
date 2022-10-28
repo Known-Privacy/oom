@@ -1,5 +1,6 @@
 {
     "[markdown]": {
     },
-    "frontMatter.content.autoUpdateDate": false
+    "frontMatter.content.autoUpdateDate": false,
+    "frontMatter.framework.startCommand": "npx eleventy --serve & npx tailwindcss -i assets/styles/tailwind.css -c assets/styles/tailwind.config.js -o _site/style.css --watch"
 }

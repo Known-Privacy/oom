@@ -41,8 +41,13 @@
     border: 2px dashed #000000;
   }
   
+  /* old man */
   .blog-post-hero {
     background-image: linear-gradient(rgba(1, 0, 1, 0.6), rgba(1, 0, 1, 0.6)), url('./assets/images/blog-post-hero-min.jpg');
+  }
+  
+  .united-states-grid-hero {
+    background-image: linear-gradient(rgba(1, 0, 1, 0.6), rgba(1, 0, 1, 0.6)), url('./assets/images/united-states-grid.jpg');
   }
   
   .liquid-13-hero {

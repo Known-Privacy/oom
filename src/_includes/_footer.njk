@@ -3,13 +3,13 @@
     
     <div class="hidden lg:flex flex-row min-w-full">
       <div class="basis-1/8 grow">
-        <img class="h-full" src="{{ '/assets/images/known-privacy-symbol.svg' | url }}" alt="Known Privacy symbol" />
+        <img class="h-full" src="{{ '/assets/images/known-privacy-symbol.svg' }}" alt="Known Privacy symbol" />
       </div>
       <div class="basis-5/8 grow">
         <div class="flex flex-row">
           {% for item in navigation %}
           <div class="border border-gray-200 p-2 m-4">
-            <a href="{{item.url | url}}" class="text-lg font-semibold">{{ item.label }}</a>
+            <a href="{{item.url}}" class="text-lg font-semibold">{{ item.label }}</a>
           </div>
           {% endfor %}
         </div>
@@ -17,10 +17,10 @@
       <div class="basis-2/8 grow">
         <ul class="list-none mb-0">
           <li class="my-5">
-            <a href="{{"/terms" | url}}">Terms of Service</a>
+            <a href="{{"/terms"}}">Terms of Service</a>
           </li>
           <li class="my-5">
-            <a href="{{"/privacy" | url}}">Privacy Policy</a>
+            <a href="{{"/privacy"}}">Privacy Policy</a>
           </li>
         </ul>
         <p class="text-sm font-semibold mt-8">© {% year %} <a href="https://www.knownprivacy.com" name="Known Privacy PBC">Known Privacy PBC</a></p>
@@ -30,10 +30,10 @@
     <div class="flex lg:hidden flex-col min-w-full">
   <ul class="list-none mb-0">
           <li class="my-5">
-            <a href="{{"/terms" | url}}">Terms of Service</a>
+            <a href="{{"/terms"}}">Terms of Service</a>
           </li>
           <li class="my-5">
-            <a href="{{"/privacy" | url}}">Privacy Policy</a>
+            <a href="{{"/privacy"}}">Privacy Policy</a>
           </li>
         </ul>
         <p class="text-sm font-semibold mt-8">© {% year %} <a href="https://www.knownprivacy.com" name="Known Privacy PBC">Known Privacy PBC</a></p>

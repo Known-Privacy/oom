@@ -1,39 +1,71 @@
 {% extends "../_includes/layouts/default.njk" %}
-{% block title %}Opt-Out Machine by Known Privacy{% endblock %}
+{% block title %}About the Opt-Out Machine and Known Privacy{% endblock %}
 {% set description = "The motivation for creating the Opt-Out Machine was to take a step toward getting our privacy back." %}
 {% block content %}
-  <div class="bg-neutral flex relative bg-cover bg-no-repeat h-[240px] united-states-grid-hero">
-    <h1 class="font-semibold text-4xl lg:text-6xl leading-none capitalize text-white mt-16 p-16">About Us</h1>
-  </div>
-  <div class="bg-neutral flex flex-row p-6 lg:px-56">
-    <div class="">
-      <h2 class="font-semibold text-2xl md:text-3xl leading-relaxed capitalize mt-12 mb-2">We created the Opt-Out Machine because we want our privacy back.</h2>
-      <p class="my-8 text-lg">We believe that personal data about you should never be used to affect your life without your knowledge or permission. But it happens every day. 
-        And as anyone watching can see, surveillance is getting more commonplace. If we don't act to get our privacy back, we can expect:</p>
-      <ul class="ml-4 leading-loose">
-        <li class="list-disc lg:list-none hover:list-disc pl-2 mt-3 text-lg">More stolen credit card numbers</li>
-        <li class="list-disc lg:list-none lg:hover:list-disc pl-2 mt-3 text-lg">Higher possibility of identity theft</li>
-        <li class="list-disc lg:list-none lg:hover:list-disc pl-2 mt-3 text-lg">Greater feeling that we need to self-censor on the Internet</li>
-        <li class="list-disc lg:list-none lg:hover:list-disc pl-2 mt-3 text-lg">More egregious data leaks by corporations affecting you</li>
-        <li class="list-disc lg:list-none lg:hover:list-disc pl-2 mt-3 text-lg">More government overreach</li>
-      </ul>
+  <div class="bg-neutral">
+    <div class="flex relative bg-cover bg-no-repeat h-[240px] united-states-grid-hero">
+      <h1 class="font-semibold text-4xl lg:text-6xl leading-none capitalize text-white mt-16 p-16">About Us</h1>
     </div>
-  </div>
-  <div class="bg-neutral flex flex-row p-6 mt-8 md:mt-8 lg:px-56">
-    <h1 class="font-semibold text-3xl capitalize">Our Responsibilities</h1>
-  </div>
-  <div class="bg-neutral flex flex-col lg:flex-row lg:mb-4 px-6 py-2 lg:px-56">
-    <div class="basis-2/3">
-      <p class="text-lg">As the makers of the Opt-Out Machine, our commitments to you are:</p>
-      <ol class="list-decimal pl-4 leading-loose">
-        <li class="pl-4 mt-3 text-lg">To be good stewards of your personal information, only holding the minimum needed to make privacy requests</li>
-        <li class="pl-4 mt-3 text-lg">To maintain a focus on your security in the design and maintenance of our systems</li>
-        <li class="pl-4 mt-3 text-lg">To tell you the truth in a timely manner and remedy the situation to the best of our ability if we screw up</li>
-        <li class="pl-4 mt-3 text-lg">A corporate charter that says even if our company merges with another company, your data can never be sold or used in a way that you have not explicitly agreed to</li>
-      </ol>
+    <div class="flex flex-row p-6 lg:px-56">
+      <div>
+        <h2 class="font-semibold text-2xl md:text-3xl leading-relaxed capitalize mt-12 mb-2">We created the Opt-Out Machine because we want our privacy back.</h2>
+        <p class="my-8 text-lg">We believe that personal data about you should never be used to affect your life without your knowledge or permission. But it happens every day. 
+          And as anyone watching can see, surveillance is getting more commonplace. If we don't act to get our privacy back, we can expect:</p>
+        <ul class="ml-4 leading-loose">
+          <li class="list-disc lg:list-none lg:hover:list-disc pl-2 mt-3 text-lg">More stolen credit card numbers</li>
+          <li class="list-disc lg:list-none lg:hover:list-disc pl-2 mt-3 text-lg">Higher possibility of identity theft</li>
+          <li class="list-disc lg:list-none lg:hover:list-disc pl-2 mt-3 text-lg">Greater feeling that we need to self-censor on the Internet</li>
+          <li class="list-disc lg:list-none lg:hover:list-disc pl-2 mt-3 text-lg">More egregious data leaks by corporations affecting you</li>
+          <li class="list-disc lg:list-none lg:hover:list-disc pl-2 mt-3 text-lg">More government overreach</li>
+        </ul>
+      </div>
     </div>
-    <div class="basis-1/3">
-      <img class="mt-12 lg:mt-0 lg:float-right" src="{{ '/assets/images/public-benefit-corporation-black.svg' | url }}" alt="public benefit corporation">
+    <div class="flex flex-row p-6 mt-8 md:mt-8 lg:px-56">
+      <h1 class="font-semibold text-3xl capitalize">Our Responsibilities</h1>
+    </div>
+    <div class="flex flex-col lg:flex-row lg:mb-4 px-6 py-2 lg:px-56">
+      <div class="basis-2/3">
+        <p class="text-lg">As the makers of the Opt-Out Machine, our commitments to you are:</p>
+        <ol class="list-decimal pl-4 leading-loose">
+          <li class="pl-4 mt-3 text-lg">To be good stewards of your personal information, only holding the minimum needed to make privacy requests</li>
+          <li class="pl-4 mt-3 text-lg">To maintain a focus on your security in the design and maintenance of our systems</li>
+          <li class="pl-4 mt-3 text-lg">To tell you the truth in a timely manner and remedy the situation to the best of our ability if we screw up</li>
+          <li class="pl-4 mt-3 text-lg">A corporate charter that says even if our company merges with another company, your data can never be sold or used in a way that you have not explicitly agreed to</li>
+        </ol>
+      </div>
+      <div class="basis-1/3">
+        <img class="mt-12 lg:mt-0 lg:float-right" src="{{ '/assets/images/public-benefit-corporation-black.svg' | url }}" alt="public benefit corporation">
+      </div>
+    </div>
+    
+    <div class="flex flex-row p-6 mt-8 md:mt-8 lg:px-56">
+      <h1 class="font-semibold text-3xl capitalize">Who We Are</h1>
+    </div>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8 lg:px-56">
+      {%- for bio in bios -%}
+        <div class="bg-white m-2 h-full">
+          <div class="mx-auto text-center bg-black text-white p-4">
+            <img class=" h-36 w-36 mx-auto rounded-full border-dashed border border-gray-300" src="{{ bio.picture | url }}" alt="{{ bio.name }}" title="{{ bio.name }}">
+            <div class="font-bold leading-snug mt-4">{{ bio.name }}</div>
+            <div class="text-xs uppercase font-bold tracking-wider">{{ bio.title }}</div>
+          </div>
+          <div class="mt-2  p-6">{% include bio.bio %}</div>
+
+          <div class="flex flex-row p-4">
+            <a href="{{ bio.twitterUrl }}" target="_blank" class="pr-4" title="{{ bio.twitterUrl }}">
+              <img src="{{ '/assets/images/twitter-icon.svg' | url }}" loading="lazy" alt="{{ bio.twitterUrl }}">
+            </a>
+            
+            <a href="{{bio.linkedInUrl}}" target="_blank" title="{{ bio.linkedInUrl }}">
+              <img src="{{ '/assets/images/linkedin-icon.svg' | url }}" loading="lazy" alt="{{ bio.linkedInUrl }}">
+            </a>
+          </div>
+          
+        </div>
+      
+      {%- endfor -%}
+      
     </div>
   </div>
 {% endblock %}

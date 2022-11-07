@@ -14,5 +14,5 @@ module.exports = [
         linkedInUrl: "https://www.linkedin.com/in/brendan-roberts-22092a21/",
         twitterUrl: "https://twitter.com/brendanmroberts",
         bio: "content/brendan.html",
-    },
+    }
 ];

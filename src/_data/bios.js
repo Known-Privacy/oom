@@ -10,9 +10,9 @@ module.exports = [
     {
         name: "Brendan Roberts",
         title: "Co-founder & CTO",
-        picture: "/assets/images/brendan-roberts.jpg",
+        picture: "/assets/images/brendan-roberts.jpeg",
         linkedInUrl: "https://www.linkedin.com/in/brendan-roberts-22092a21/",
         twitterUrl: "https://twitter.com/brendanmroberts",
         bio: "content/brendan.html",
-    }
+    },
 ];

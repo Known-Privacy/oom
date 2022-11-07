@@ -31,3 +31,5 @@ jobs:
         with:
           publish_dir: ./_site
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          allow_empty_commit: true
+          cname: www.opt-out.ai

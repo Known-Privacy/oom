@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% if title %}
     <title>{{ title }}</title>
+    {% endif %}
     <meta charset="UTF-8"/>
     {% if description %}
       <meta name="description" content="{{description}}"/>

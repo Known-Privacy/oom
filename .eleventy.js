@@ -2,6 +2,13 @@ const htmlmin = require('html-minifier')
 const now = String(Date.now())
 const Image = require("@11ty/eleventy-img");
 const { DateTime } = require("luxon");
+const site = require('./src/_data/site');
+
+/**
+ * Prefixes the given URL with the site's base URL.
+ * @param {string} url
+ */
+const toAbsoluteUrl = (url) => new URL(url, site.baseUrl).href;
 
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
@@ -23,7 +30,7 @@ async function imageShortcode(src, alt, sizes) {
 
 function htmlMinifier(content, outputPath) {
   if (
-    process.env.ELEVENTY_PRODUCTION &&
+    process.env.ELEVENTY_ENV === "production" &&
     outputPath &&
     outputPath.endsWith('.html')
   ) {
@@ -60,6 +67,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("published", (articles) => {
     return articles.filter(article => article && article.data.draft === false)
   });
+
+  eleventyConfig.addFilter('toAbsoluteUrl', toAbsoluteUrl);
   
   return {
     passthroughFileCopy: true,

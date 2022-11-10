@@ -1,0 +1,155 @@
+{% extends "../_includes/layouts/default.njk" %}
+{% block title %}Frequently asked questions about the Opt-Out Machine by Known Privacy{% endblock %}
+{% set description = "" %}
+{% block content %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Can't I Opt-Out myself? Why do I need the Opt-Out Machine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you can go to each Data Broker website and Opt-Out for free. The reason we created the Opt-Out Machine is that it is really difficult and time consuming. Surveillance Companies (aka Data Brokers) are hard to find, create difficult time-consuming processes and generally make it hard. Often they ask to verify your identity. Imagine doing that at over 300 websites? It's much easier to use an automated solution."
+      }
+    },{
+      "@type": "Question",
+      "name": "Which companies can I opt-out of?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are currently over 300 companies that you can send requests to with the Opt-Out Machine. These are primarily companies known as \"data brokers\" - who are in the business of buying and selling data about you."
+      }
+    },{
+      "@type": "Question",
+      "name": "Why do you charge annually? Why can't I pay monthly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are several privacy laws that give you privacy rights. One of the more important ones, the CCPA in California, give companies 45 days to comply with a request, and in some cases 90 days. You can't really complete the process in less time. That law also states that an Opt-Out is good for 12 months. We are also adding new companies to Opt-Out of throughout the year, as well as tracking those that change their names, or stand up new companies to trade your data. This happens pretty frequently with some Data Brokers, who create subsidiaries or new entities to stay off the radar of regulators or others."
+      }
+    },{
+      "@type": "Question",
+      "name": "Is there a money-back guarantee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. If you are not satisfied, we are happy to offer a full refund. We can't promise that the Data Brokers will comply with the law or do what what the Opt-Out Machine asks, but it won't be for lack of trying."
+      }
+    },{
+      "@type": "Question",
+      "name": "Will I have to do anything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once registered, all you have to do is verify your identity and give the Opt-Out Machine permission to act on your behalf. Then, you hit the button to initiate the Opt-Out Machine. It will send the requests to hundreds of companies. It is very satisfying to watch it go. After that, everything is automated."
+      }
+    },{
+      "@type": "Question",
+      "name": "Why should I care about my data being out there? Why does Privacy matter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We wrote a post about this. Check it out: https://www.knownprivacy.com/education/why-privacy-matters"
+      }
+    }]
+  }
+  </script>
+
+  <style>
+    summary::-webkit-details-marker { display: none; }
+
+    details[open] svg { transform: rotate(90deg); }
+
+    svg { transition: all 0.3s; }
+  </style>
+
+  <div class="bg-neutral">
+    <div class="flex relative bg-cover bg-no-repeat h-[240px] united-states-grid-hero">
+      <h1 class="font-semibold text-4xl lg:text-6xl leading-none capitalize text-white mt-8 md:mt-16 p-16">Frequently Asked Questions</h1>
+    </div>
+    <div class="p-6 lg:px-56">
+      <details>
+        <summary class="flex flex-row items-center py-4 cursor-pointer">
+          <div class="basis-1/6 md:basis-1/12">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+          </div>
+          <div class="basis-5/6 md:basis-11/12">
+            <h3 class="text-lg cursor-pointer">Can't I Opt-Out myself? Why do I need the Opt-Out Machine?</h3>
+          </div>
+        </summary>
+        <div class="p-6 pl-14 lg:pl-24 bg-white rounded-lg">
+          <p class="mt-4">Yes, you can go to each Data Broker website and Opt-Out for free.</p>
+          <p class="mt-4">The reason we created the Opt-Out Machine is that it is really difficult and time consuming. Surveillance Companies (aka Data Brokers) are hard to find, create difficult time-consuming processes and generally make it hard. Often they ask to verify your identity. Imagine doing that at over 300 websites?</p>
+          <p class="mt-4">It's much easier to use an automated solution.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary class="flex flex-row items-center py-4 cursor-pointer">
+          <div class="basis-1/6 md:basis-1/12">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+          </div>
+          <div class="basis-5/6 md:basis-11/12">
+            <h3 class="text-lg cursor-pointer">Which companies can I opt-out of?</h3>
+          </div>
+        </summary>
+        <div class="p-6 pl-14 lg:pl-24 bg-white rounded-lg">
+          <p class="mt-4">There are currently over 300 companies that you can send requests to with the Opt-Out Machine. These are primarily companies known as "data brokers" - who are in the business of buying and selling data about you.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary class="flex flex-row items-center py-4 cursor-pointer">
+          <div class="basis-1/6 md:basis-1/12">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+          </div>
+          <div class="basis-5/6 md:basis-11/12">
+            <h3 class="text-lg cursor-pointer">Why do you charge annually? Why can't I pay monthly?</h3>
+          </div>
+        </summary>
+        <div class="p-6 pl-14 lg:pl-24 bg-white rounded-lg">
+          <p class="mt-4">There are several privacy laws that give you privacy rights. One of the more important ones, the CCPA in California, give companies 45 days to comply with a request, and in some cases 90 days. You can't really complete the process in less time. That law also states that an Opt-Out is good for 12 months. We are also adding new companies to Opt-Out of throughout the year, as well as tracking those that change their names, or stand up new companies to trade your data. This happens pretty frequently with some Data Brokers, who create subsidiaries or new entities to stay off the radar of regulators or others.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary class="flex flex-row items-center py-4 cursor-pointer">
+          <div class="basis-1/6 md:basis-1/12">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+          </div>
+          <div class="basis-5/6 md:basis-11/12">
+            <h3 class="text-lg cursor-pointer">Is there a money-back guarantee?</h3>
+          </div>
+        </summary>
+        <div class="p-6 pl-14 lg:pl-24 bg-white rounded-lg">
+          <p class="mt-4">Yes. If you are not satisfied, we are happy to offer a full refund. We can't promise that the Data Brokers will comply with the law or do what what the Opt-Out Machine asks, but it won't be for lack of trying.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary class="flex flex-row items-center py-4 cursor-pointer">
+          <div class="basis-1/6 md:basis-1/12">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+          </div>
+          <div class="basis-5/6 md:basis-11/12">
+            <h3 class="text-lg cursor-pointer">Will I have to do anything?</h3>
+          </div>
+        </summary>
+        <div class="p-6 pl-14 lg:pl-24 bg-white rounded-lg">
+          <p class="mt-4">Once registered, all you have to do is verify your identity and give the Opt-Out Machine permission to act on your behalf. Then, you hit the button to initiate the Opt-Out Machine. It will send the requests to hundreds of companies. It is very satisfying to watch it go. After that, everything is automated.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary class="flex flex-row items-center py-4 cursor-pointer">
+          <div class="basis-1/6 md:basis-1/12">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+          </div>
+          <div class="basis-5/6 md:basis-11/12">
+            <h3 class="text-lg cursor-pointer">Why should I care about my data being out there? Why does Privacy matter?</h3>
+          </div>
+        </summary>
+        <div class="p-6 pl-14 lg:pl-24 bg-white rounded-lg">
+          <p class="mt-4">We wrote a post about this. <a class="underline" href="{{"/education/2022-11-02-why-privacy-matters/"}}">Check it out here</a></p>
+        </div>
+      </details>  
+    </div>
+  </div>
+{% endblock %}

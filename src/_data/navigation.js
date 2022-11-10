@@ -12,6 +12,10 @@ module.exports = [
       'url': '/pricing'
     },
     {
+      'label': 'FAQ',
+      'url': '/faq'
+    },
+    {
       'label': 'Sign In',
       'url': 'https://app.knownprivacy.com/users/log_in'
     }

@@ -3,15 +3,19 @@
   <head>
     {% if title %}
     <title>{{ title }}</title>
+    <meta property="og:title" content="{{ title }}" />
     {% endif %}
     <meta charset="UTF-8"/>
     {% if description %}
-      <meta name="description" content="{{description}}"/>
+    <meta name="description" content="{{description}}"/>
+    <meta property="og:description" content="{{description}}" />
     {% endif %}
     {% if keywords %}
       <meta name="keywords" content="{{keywords}}"/>
     {% endif %}
-    
+    <meta property="og:type" content="article" />
+    <meta rel="canonical" href="{{ page.url | toAbsoluteUrl }}">
+    <meta property="og:url" content="{{ page.url | toAbsoluteUrl }}" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/manifest/favicon.ico' }}" />

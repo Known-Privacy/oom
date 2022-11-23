@@ -4,7 +4,7 @@ module.exports = [
         author: "K.L."
     },
     {
-        message: "The satisfaction of seeing the opt-out requests sent to these companies was well worth the $100 for Known Privacy's Opt-Out Machine. Now the companies have 45 days to comply and must acknowledge the request within 15 days.",
+        message: "The satisfaction of seeing the opt-out requests sent to these companies was well worth the price for Known Privacy's Opt-Out Machine. Now the companies have 45 days to comply and must acknowledge the request within 15 days.",
         author: "Roman V."
     },
     {

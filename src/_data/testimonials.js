@@ -11,4 +11,8 @@ module.exports = [
         message: "So far I rate this as a five. It is nice to know that there is an option for those of use who value data security. Thank you for giving us a chance!",
         author: "David S."
     }
+    // {
+    //     message: "It has been such a relief to find and work with Known Privacy. As a psychotherapist I place high value on my own and other's privacy. Finally I have a formidable ally advocating for my privacy on-line. Now I get to decide who does and does not have my information on-line. I feel like I have my power of choice and personal sovereignty back. Thank you, Known Privacy!",
+    //     author: "Catherine H."
+    // }
 ];

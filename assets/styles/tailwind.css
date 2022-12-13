@@ -70,7 +70,8 @@
   }
   
   .hands-on-phone {
-    margin: 0px 0 -40px 235px;
+    /* margin: 0px 0 -40px 235px; */
+    margin: 0px 0 -40px 65px;
     background-image: url('./assets/images/hands-on-phone.png');
     background-repeat: no-repeat;
   }

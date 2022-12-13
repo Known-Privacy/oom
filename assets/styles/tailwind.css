@@ -59,6 +59,30 @@
     background-repeat: no-repeat;
   }
   
+  .neural-network {
+    background-image: url('./assets/images/neural-network-min.png');
+    background-repeat: no-repeat;
+  }
+  
+  .handle-phone {
+    background-image: url('./assets/images/handling-phone.png');
+    background-repeat: no-repeat;
+  }
+  
+  .hands-on-phone {
+    /* margin: 0px 0 -40px 235px; */
+    margin: 0px 0 -40px 65px;
+    background-image: url('./assets/images/hands-on-phone.png');
+    background-repeat: no-repeat;
+  }
+
+  .hands-on-phone .clip-center {
+    padding: 255px;
+    margin: -5px -5px;
+    border-radius: 50%;
+    border: 2px dashed #000000;
+  }  
+  
   .ellipse-23 {
     margin: 60px 0 60px 52px;
     background-image: url('./assets/images/ellipse-23-min.png');

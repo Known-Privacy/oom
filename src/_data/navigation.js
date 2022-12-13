@@ -12,8 +12,8 @@ module.exports = [
       'url': '/pricing'
     },
     {
-      'label': 'FAQ',
-      'url': '/faq'
+      'label': 'Business',
+      'url': '/business'
     },
     {
       'label': 'Sign In',

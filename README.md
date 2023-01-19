@@ -8,3 +8,6 @@ This site is mostly static, with the exception of the Education section, which i
 - Tailwind CSS
 
 Blogging functionality for the Education section uses the Front Matter plugin for VSCode.
+
+## Run it with:
+> npm start

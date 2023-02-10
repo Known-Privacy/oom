@@ -1,7 +1,7 @@
 ---
 layout: education.njk
-title: Shady Data Broker Practices
-description: ""
+title: Privacy rights dark patterns
+description: "Pay attention to the details with privacy requests"
 date: 2022-11-22T16:13:54.584Z
 draft: false
 tags: "education"

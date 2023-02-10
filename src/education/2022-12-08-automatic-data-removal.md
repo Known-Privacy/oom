@@ -22,7 +22,7 @@ We see this a lot in the Opt-Out Machine. A request is made for a copy of person
 
 "Your data has been removed"
 
-Thanks, but that's not what was asked. The Opt-Out Machine will usually push back, requesting that the original requests be honored. But nothing can be reported back if it's already been deleted, right? We can't tell if this is lack of preparedness for the request, incompetence, or intentional avoidance of embarrassment.
+Thanks, but that is not what was asked. The Opt-Out Machine will usually push back, requesting that the original requests be honored. But nothing can be reported back if it's already been deleted, right? We can't tell if this is a lack of preparedness for the request, incompetence, or intentional avoidance.
 
 ### _"Verification of identity is required through the Oracle Advertising access site before your request to access offline information can be processed."_
 
@@ -37,4 +37,4 @@ People finder sites are big on this. In other words, they are saying "fulfill yo
 
 ### Ultimately, most of these companies are playing the same game
 
-Employees at data brokers are still coming to grips with the notion that their business practices are not ethically legitimate. They have often purchased software packages to manage privacy requests that are focused on their needs rather than what privacy laws are intent on helping "consumers" accomplish. That is: they intentionally make it hard. Known Privacy will continue to call this behavior out and be an advocate for your privacy rights.
+There is still much to do to change back our cultural acceptance that surveillance is okay. Data broker businesses believe that they are in the right. They have often purchased software packages to manage privacy requests that are focused on their needs rather than what privacy laws are intent on helping "consumers" accomplish. That is: they intentionally make it hard. Known Privacy will continue to call this behavior out and be an advocate for your privacy rights.

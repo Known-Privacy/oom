@@ -37,4 +37,4 @@ People finder sites are big on this. In other words, they are saying "fulfill yo
 
 ### Ultimately, most of these companies are playing the same game
 
-There is still much to do to change back our cultural acceptance that surveillance is okay. Data broker businesses believe that they are in the right. They have often purchased software packages to manage privacy requests that are focused on their needs rather than what privacy laws are intent on helping "consumers" accomplish. That is: they intentionally make it hard. Known Privacy will continue to call this behavior out and be an advocate for your privacy rights.
+There is still much to do to evolve our cultural view that surveillance is not okay. Data broker businesses believe that they are in the right. They have often purchased software packages to manage privacy requests that are focused on their needs rather than what privacy laws are intent on helping "consumers" accomplish. That is: they intentionally make it hard. Known Privacy will continue to call this behavior out and be an advocate for your privacy rights.

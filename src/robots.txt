@@ -1,0 +1,4 @@
+Sitemap: https://www.opt-out.ai/sitemap.xml
+
+User-agent: *
+Disallow:

@@ -14,7 +14,7 @@ module.exports = [
   {
     name: "Opt-Out Machine",
     description: "Automated opt-out requests",
-    price: "$120",
+    price: "$150",
     link: "https://app.knownprivacy.com/users/register",
     features: [
       "All of the Data Brokers in the DIY plan",
